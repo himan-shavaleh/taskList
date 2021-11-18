@@ -1,0 +1,15 @@
+{
+  "name": "tasklist",
+  "version": "1.0.0",
+  "description": "a siplme task list \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[Cs\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dk\u001b[C\u001b[D \u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[Dlist app",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass --watch ./dist/scss -o ./dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "taskList"
+  },
+  "author": "Himan Shavaleh",
+  "license": "ISC"
+}
