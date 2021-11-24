@@ -1,0 +1,183 @@
+// imporing fonts
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&family=Noto+Kufi+Arabic:wght@500&display=swap');
+
+// resets
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: 'Markazi Text', serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+// ////////////////
+//color variables
+$color-danger:#ae0001;
+$color-dark:#222222;
+$color-bisque:#d3a625;
+$color-warning:#eeba30;
+$color-dark-danger:#740001;
+$color-succes:#109c3a;
+$color-light:#eee;
+.container{
+.tasks{
+    width: 90%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+   
+    display: flex;
+flex-direction: column;
+// justify-content: space-evenly;
+margin: 5vh auto;
+align-items: center;
+width: 90vw;
+height: 90vh;
+background: $color-light;
+box-shadow: 0 0 1rem $color-dark;
+border-radius: 10px;
+.header{
+    h1{
+        font-family: 'Noto Kufi Arabic', sans-serif;
+        color: $color-dark;
+        border-bottom: 0.4rem solid $color-dark;
+        margin: 0.5rem auto;
+        font-size: 1.5rem;
+    }
+    
+}
+#new-task{
+    border-bottom: 1px solid $color-dark;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    .input-group{
+        transition: all 0.5s ease-in;
+        &:focus-within label{
+            color: $color-succes!important;
+            margin-bottom: -0.2rem!important;
+            transition: all 0.3s ease-in;
+        }
+    #task-label{
+        color: $color-dark-danger;
+        margin-bottom: -1.5rem;
+        margin-right: 1.5rem;
+        display: block;
+    }
+    #task{
+        width: 80vw;
+        margin: 1rem;
+        border: none;
+        border-bottom: 2px $color-dark-danger solid;
+        background: transparent;
+        &:focus{
+            outline: none;
+            border-bottom: $color-succes 2px solid;
+           
+      
+}
+
+}
+ }
+ #imp{
+     display: flex;
+     justify-content: center;
+     margin: 1rem;
+     color: $color-danger;
+     #importance{
+         cursor: pointer;
+         margin: auto 0.1rem;
+         color: $color-danger;
+         background: rgba($color: $color-bisque, $alpha: 0.4);
+         padding: 0.3rem;
+         border: none;
+         border-radius: 3px;
+         &:focus{
+             outline: none;
+             background: $color-succes;
+         }
+     }
+ }
+ #add__task{
+     width: 200px;
+     margin: auto;
+     transition: all 0.5s;
+     border:1px solid $color-dark;
+     cursor: pointer;
+     border-radius: 5px;
+     padding: 0.2rem;
+     &:hover{
+         color: $color-light;
+         background: $color-succes;
+         border: none;
+     }
+ }
+}
+.search{
+    transition: all 0.5s ease-in;
+    &:focus-within label{
+        color: $color-succes!important;
+        margin-bottom: -0.2rem!important;
+        transition: all 0.3s ease-in;
+    }
+    #search-label{
+        color: $color-dark-danger;
+        margin-bottom: -1.5rem;
+        margin-right: 1.5rem;
+        display: block;
+    } 
+    #search{
+        width: 80vw;
+        margin: 1rem;
+        border: none;
+        border-bottom: 2px $color-dark-danger solid;
+        background: transparent;
+        &:focus{
+            outline: none;
+            border-bottom: $color-succes 2px solid;
+           
+      
+}
+    } 
+}
+#clear{
+    width: 200px;
+    margin: auto;
+    transition: all 0.5s;
+    border:1px solid $color-dark;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.2rem;
+    &:hover{
+        color: $color-light;
+        background: $color-danger;
+        border: none;
+}
+}
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    border-bottom: 1px solid $color-warning;
+    padding: 5px;
+    span{
+        color: $color-warning;
+
+    }
+    a{
+        color: $color-dark-danger;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover{
+            color: $color-danger;
+        }
+    }
+
+}

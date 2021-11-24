@@ -5,10 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/main.css">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script defer src="main.js"></script>
     <title>Task List</title>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- header for adding new task -->
+        <div class="header">
+            <h1>لیست کارها</h1>
+        </div>
+        <div class="adding-task input-group">
+            <form id="new-task">
+                <div class="input-group">
+                    <label for="task" id="task-label">کار جدید</label>
+            <input type="text" id="task" name="task">
+                </div>
+            <div class="input-group" id="imp">
+                <label for="importance" id="importance-label">درجه اهمیت</label>
+                <select name="importance" id="importance">
+                    <option value="انتخاب کنید">انتخاب کنید</option>
+                    <option value="کم اهمیت">کم اهمیت</option>
+                    <option value="مهم">مهم</option>
+                    <option value="ضروری">ضروری</option>
+                </select>
+            </div>
+           
+            <input id="add__task" type="submit" value="اضافه کردن" class="btn btn-succes">
+        </form>
+        </div>
+        <!-- this section is for searching between tasks -->
+        <!-- //////////////////////////// -->
+        <div class="search">
+            <label for="search" id="search-label">جستجو در کارها</label>
+            <input type="search" name="search" id="search">
+        </div>
+        <!-- showing all tasks and delete or clear all of them  -->
+        <!-- //////////////////////////// -->
+        <div class="tasks">
+            <ul class="task-list">
+
+
+               
+            </ul>
+        </div>
+        <button id="clear" class="btn btn-danger">پاک کردن همه</button>
+    </div>
+
 </body>
 </html>
